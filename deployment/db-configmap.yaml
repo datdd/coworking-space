@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  DB_USERNAME: "admin"
+  DB_NAME: "coworking"
+  DB_HOST: "coworking-db-postgresql"
+  DB_PORT: "5432"
+metadata:
+  name: db-env

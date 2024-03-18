@@ -16,5 +16,5 @@ app.config["SQLALCHEMY_DATABASE_URI"] = f"postgresql://{db_username}:{db_passwor
 db = SQLAlchemy(app)
 
 # Configure logging
-logging.basicConfig(filename='app.log', level=logging.DEBUG, format='[%(asctime)s] %(levelname)s in %(module)s: %(message)s')
-# app.logger.setLevel(logging.DEBUG)
+# logging.basicConfig(filename='app.log', level=logging.DEBUG, format='[%(asctime)s] %(levelname)s in %(module)s: %(message)s')
+app.logger.setLevel(logging.DEBUG)

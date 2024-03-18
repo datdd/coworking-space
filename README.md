@@ -45,11 +45,11 @@ helm repo add bitnami https://charts.bitnami.com/bitnami
 
 3. Install PostgreSQL Helm Chart
 ```bash
-helm install coworking-db bitnami/postgresql `
-  --set auth.username=admin `
-  --set auth.password=admin123 `
-  --set auth.database=coworking `
-  --set primary.persistence.existingClaim=coworking-space-pvc `
+helm install coworking-db bitnami/postgresql \
+  --set auth.username=admin \
+  --set auth.password=admin123 \
+  --set auth.database=coworking \
+  --set primary.persistence.existingClaim=coworking-space-pvc \
   --set volumePermissions.enabled=true
 ```
 
